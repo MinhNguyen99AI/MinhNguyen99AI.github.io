@@ -1,9 +1,245 @@
 <!DOCTYPE html>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<style>
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+</style>
 <html>
-<h1> Hellow World </h1>
-<div class="alert alert-primary" role="alert">
-  A simple primary alert—check it out!
+<nav class="navbar navbar-dark bg-dark sticky-top">
+  <div class="container-fluid" style = "height: 60px">
+  	<a class="navbar-brand" href="#">
+      MINH LE NGUYEN
+     </a>
+  </div>
+</nav>
+<div class = "container mt-5 mb-5">
+	<div class  = "row">
+		<div class = "col-sm-6">
+			<h2> About Me </h2>
+			<p> My name is Minh Le Nguyen. I am 22 years old, was born and grew up in Vietnam. I went to the US alone when I was 17 for college. I am currently looking for a position in New York. I am young and incredibly passionate with AI/ML, and its potential for our world in the future. </p> 
+		</div>
+		<div class = "col-sm-6">
+			<img src="aboutme.jpg" class = "rounded img-fluid">
+		</div>
+	</div>
 </div>
+
+<div class = "container">
+<hr>
+</div>
+<div class = "container mb-5 mt-5">
+	<h2 class = "mb-3 text-center"> Education </h2>
+	<ol class="list-group list-group-numbered">
+			  <li class="list-group-item d-flex justify-content-between align-items-start">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold mb-3">Master's Degree from Boston University</div>
+			      <p> Focus: Artificial Intelligence</p>
+			      <p> Related Coursework: Machine Learning, Artificial Intelligence, Image and Video Computing, Natural Language Processing, Deep Learning, Computer Graphics, Database, Algorithmic Data Mining.
+			      </p>
+			      <p>GPA: 3.70</p>
+			      <p>
+			      <a href ="https://drive.google.com/file/d/1bq4GQitheg_rdzTRbcS-GhmFUEsl6P6_/view?usp=sharing" class="text-decoration-none"> Transript </a></p>
+			      <p> <a href ="https://www.bu.edu/cs/masters/program/ai/" class="text-decoration-none"> Degree info </a></p>
+			    </div>
+			    <span class="badge bg-dark rounded-pill">September 2021 - May 2022</span>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold mb-3">Bachelor's Degree from Depauw University</div>
+			      <p>Major: Computer Science</p>
+			      <p>Minor: Mathematics</p>
+			      <p>Related Coursework: Data Mining, Artificial Intelligence, Object Oriented and Software Development, Web Development and Cybersecurity, Programming Languages, Graphs Theory, Analysis.</p>
+			      <p>GPA: 3.72</p>
+			      
+			  
+			      
+			      <p><a href ="https://drive.google.com/file/d/1ngP-njfeM1HLYY-qz4vuCpp1XWrlW2Q_/view?usp=sharing" class="text-decoration-none"> Transcript </a></p>
+			    </div>
+			    <span class="badge bg-dark rounded-pill">August 2017 - May 2021</span>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold mb-3">Hanoi Amsterdam Highschool for the Gifted</div>
+			      <p>Focus: Computer Science and Algorithms</p> 
+			      <p>ACT: 32</p>
+			    </div>
+			    <span class="badge bg-dark rounded-pill">August 2014 - May 2017</span>
+			  </li>
+			</ol>
+</div>
+<div class = "container">
+<hr>
+</div>
+<div class = "container mb-5 mt-5">
+	<h2 class = "text-center"> Experience </h2>
+	<div class = "container mb-5 mt-5">
+		<h4 class = "mb-4"> Internships </h4>
+			<ol class="list-group list-group-numbered">
+			  <li class="list-group-item d-flex justify-content-between align-items-start">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Website Developer Summer Intern</div>
+			      <a href ="https://binhminh.com.vn/" class="text-decoration-none"> Binh Minh Group </a>, Hanoi, Vietnam
+			    </div>
+			    <span class="badge bg-dark rounded-pill">June 1st 2019 - August 31st 2019</span>
+			  </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-start">
+			    <div class="ms-2 me-auto">
+			      <div class="fw-bold">Website Developer Summer Intern</div>
+			      <a href ="https://binhminh.com.vn/" class="text-decoration-none"> Binh Minh Group </a>, Hanoi, Vietnam
+			    </div>
+			    <span class="badge bg-dark rounded-pill">June 1st 2020 - August 31st 2020</span>
+			  </li>
+			</ol>
+	</div>
+	<div class = "container mb-5 mt-5">
+		<h4 class = "mb-4">Interesting Projects in AI/ML</h4>
+		<h5 class = "mb-3"> 1. Visual Odometry </h5>
+		<img src="vo.gif" class = "img-fluid">
+		<p class = "mt-3"> Recover Camera's Path from Image sequence</p>
+		<p> Recovered Path: </p>
+		<img src="vo2.png" class = "img-fluid">
+		<p>Brief explanation: From left to right, you can see the red line goes up, corresponding to the camera moving forward, in the real world. When the camera path turns left or right, the red line moves the same way.</p>
+		<p><a href = "https://github.com/MinhNguyen99AI/CSC585-Image-and-Video-Computing/tree/main/Challenge_VisualOdometry" class = "text-decoration-none"> Code and Detail Description </a> </p>
+		<h5 class = "mb-3"> 2. Virtual Assistant </h5>
+		<img src="assist.png" class = "img-fluid mb-3">
+		<p>Inspired by Jarvis in Iron Man, this is an implementation in our real world. This virtual assistant function the same was a Google's Alexa, or Apple's Siri. One up side is that: it is more personallized to me. </p>
+		<p>Functions included: send email, play a song, open an app, close an app, perform Google Search, check weather at the current location, check weather at a specific location, check movies ratings, look up wikipedia, define English words, set alarm.</p>
+		<p><a href = "https://github.com/MinhNguyen99AI/Virtual-Assistant-Jarvis/tree/main/Jarvis_SeniorProject" class = "text-decoration-none"> Code and Detail Description </a> </p>
+		<h5 class = "mb-3"> 3. Low Resource NLP Classification </h5>
+		<img src="nlp.png" class = "img-fluid">
+		<p> A low resource language text classification competition on <a href = "https://zindi.africa/competitions/ai4d-malawi-news-classification-challenge" class = "text-decoration-none"> Zindi.africa</a>. Training data includes only 1437 instances. Goal is to correctly classify 620 news titles in Chichewa language into their correct class among the 20 classes. </p>
+		<p> Results made top 10 in the competition. </p>
+		<p><a href = "https://github.com/MinhNguyen99AI/505Project-low-resource-NLP" class = "text-decoration-none"> Code and Detail Description </a> </p>
+		<h5> 4. GAN Images Detector </h5>
+		<img src="gan.png" class = "img-fluid">
+		<p class = "mt-3">  GANs has quickly became popular in the last several years. But GAN's uses for the goods is as huge as it is for the bads. We re-implemented several GAN-based method that helps us detect synthetic images.  </p>
+		
+		<img src="gan2.png" class = "img-fluid">
+		<p> Table explanation: On the left are the datasets that are tested on. On the top are the names of methods we tried.</p>
+		<p>Our experiment shows that, although most of the methods perform quite well on fake images that similar to what have been seen, those that were not seen can easily trick all detectors.  </p>
+		<p><a href = "https://github.com/MinhNguyen99AI/DeepLearning523---Synthetic-Image-Detector-Assestment" class = "text-decoration-none"> Code and Detail Description </a> </p>
+
+	</div>
+	<div class = "container mb-5 mt-5">	
+		<h4 class = "mb-4">Other Interesting Projects</h4>
+		<div class = "container mb-5 mt-5">
+		<ol class="list-group list-group-numbered">
+		  <li class="list-group-item d-flex justify-content-between align-items-start">
+		    <div class="ms-2 me-auto">
+		      <div class="fw-bold">Demographics Prediction from Tweets</div>
+		      <p><a href = "https://github.com/MinhNguyen99AI/CS640AI-Demographics-Prediction" class = "text-decoration-none"> Code </a> </p>
+		    </div>
+		    <span class="badge bg-dark rounded-pill">Python</span>
+		  </li>
+		  <li class="list-group-item d-flex justify-content-between align-items-start">
+		    <div class="ms-2 me-auto">
+		      <div class="fw-bold">AirBnB House Price Prediction </div>
+		      <p><a href = "https://github.com/MinhNguyen99AI/CS542-Machine-Learning/tree/main/challenge/class_challenge" class = "text-decoration-none"> Code </a> </p>
+		    </div>
+		    <span class="badge bg-dark rounded-pill">Python</span>
+		  </li>
+		  <li class="list-group-item d-flex justify-content-between align-items-start">
+		    <div class="ms-2 me-auto">
+		      <div class="fw-bold">SimpleDB Database </div>
+		      <p><a href = "https://github.com/MinhNguyen99AI/CS660BU_Database_SimpleDB" class = "text-decoration-none"> Code </a> </p>
+		    </div>
+		    <span class="badge bg-dark rounded-pill">Java, SQL</span>
+		  </li>
+		  <li class="list-group-item d-flex justify-content-between align-items-start">
+		    <div class="ms-2 me-auto">
+		      <div class="fw-bold">Computer Graphics OpenGL</div>
+		      <p><a href = "https://github.com/MinhNguyen99AI/CS680BU-Computer-Graphics-OpenGL" class = "text-decoration-none"> Code </a> </p>
+		    </div>
+		    <span class="badge bg-dark rounded-pill">Python, OpenGL</span>
+		  </li>
+		  <li class="list-group-item d-flex justify-content-between align-items-start">
+		    <div class="ms-2 me-auto">
+		      <div class="fw-bold">Panorama Stitching</div>
+		      <p><a href = "https://github.com/MinhNguyen99AI/CSC585-Image-and-Video-Computing/blob/main/ps3-Ransac%2C%20img%20Stitching/ps3_MinhNguyen.ipynb" class = "text-decoration-none"> Code </a> </p>
+		    </div>
+		    <span class="badge bg-dark rounded-pill">Python</span>
+		  </li>
+		  <li class="list-group-item d-flex justify-content-between align-items-start">
+		    <div class="ms-2 me-auto">
+		      <div class="fw-bold">Website with Ruby on Rails</div>
+		      <p><a href = "https://github.com/MinhNguyen99AI/CS340-Website-Development-Ruby-on-Rails" class = "text-decoration-none"> Code </a> </p>
+		    </div>
+		    <span class="badge bg-dark rounded-pill">Ruby, HTML, CSS, AWS</span>
+		  </li>
+		</ol>
+	</div>
+	</div>
+</div>
+<div class = "container">
+<hr>
+</div>
+<div class = "container mb-5 mt-5">
+	<h2 class = "text-center"> Q&A</h2>
+		<div class = "container mb-5 mt-5">
+			<h4 class = "mb-4"> Why did I decide to go into AI? </h4>
+			<p>Most of technology related topics get me excited. That is why I decided to go into Computer Science. In among all the fields of Computer Science, AI makes me excited the most.</p>
+		</div>
+
+		<div class = "container mb-5 mt-5">
+			<h4 class = "mb-4"> Why do I want to work in New York? </h4>
+			<p>Not just that I want to work in New York, but I <strong>only </strong> want to work in New York. My girlfriend got admitted to Columbia in April, and she is coming to New York. I want to be with her. Being here alone since 17 without my family has taught me how important it is to fight for our love ones.</p>
+		</div>
+
+		<div class = "container mb-5 mt-5">
+			<h4 class = "mb-4"> Do I have any working experience with AI/ML? </h4>
+			<p>Unfortunately I have not has the opportunity to have working experience in AI/ML. I am more than happy to take an intern position (if available) if I do not seem like a good fit due to lack of experience.</p>
+		</div>
+
+		<div class = "container mb-5 mt-5">
+			<h4 class = "mb-4"> Am I legally allowed to work? </h4>
+			<p> Yes, I am. I have sent my OPT application to the ISCIS on May 20th. I should receive my EAD card within 4-6 weeks. My OPT start date is July 20th, 2022. I have 36 months of post-completion OPT</p>
+		</div>
+
+		<div class = "container mb-5 mt-5">
+			<h4 class = "mb-4">Do I need Visa sponsorship in the future?</h4>
+			<p> No, I do not.</p>
+		</div>
+
+		<div class = "container mb-5 mt-5">
+			<h4 class = "mb-4"> Is my AI Master Program at Boston only a 9 months program? </h4>
+			<p>It is a 3 semesters program, but I rushed the program and completed in 2 semesters. </p>
+		</div>
+
+</div>
+<div class = "container">
+<hr>
+</div>
+<div class = "container mb-5 mt-5">
+	<h2 class = "text-center mb-5"> Contacts </h2>
+	<div class="container text-center mt-3">
+	  <div class="row">
+	    <div class="col">
+	      <img src="pin.png" width = "40" class = "mb-2">
+	      <p>1307 Commonwealth Ave, Boston, MA 02134</p>
+	    </div>
+	    <div class="col">
+	      <img src="email.png" width = "40" class = "mb-2">
+	      <p>minhng99@bu.edu</p>
+	    </div>
+	    <div class="col">
+	      <img src="telephone.png" width = "40" class = "mb-2">
+	      <p> (347) 600-3525</p>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<div class = "container">
+<hr>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid" style = "height: 20px">
+  </div>
+</nav>
+
+
 </html>
