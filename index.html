@@ -131,6 +131,16 @@
 		<p>Our experiment shows that, although most of the methods perform quite well on fake images that similar to what have been seen, those that were not seen can easily trick all detectors.  </p>
 		<p><a href = "https://github.com/MinhNguyen99AI/DeepLearning523---Synthetic-Image-Detector-Assestment" class = "text-decoration-none"> Code and Detail Description </a> </p>
 
+		<h5> 5. Short term StockPrice prediction </h5>
+		<img src="stock.png" class = "img-fluid">
+		<p class = "mt-3">  Analyzed a dataset consisting of a 100 days stock price. Constructed new features (feature engineering). Built a Long short-term memory (LSTM) neural network to solve the problem.  </p>
+		
+		<img src="predictionstock.png" class = "img-fluid">
+		<p> As for experiment, I trained the model on the first 92/100 days, feed the 93rd day as new input, and predict the 94th day to 99th day, and compare the predictions with real values. </p>
+		<p> As we can see, I successfully predict six days ahead, for each new entry added into the original dataset (time-series data), with low error.</p>
+		<p> I also constructed an adaptive pipeline that enable the model to self adjust its parameters based on the dataset. </p>
+		<p><a href = "https://github.com/MinhNguyen99AI/StockPricePrediction" class = "text-decoration-none"> Code and Detail Description </a> </p>
+
 	</div>
 	<div class = "container mb-5 mt-5">	
 		<h4 class = "mb-4">Other Interesting Projects</h4>
